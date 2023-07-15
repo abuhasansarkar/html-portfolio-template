@@ -1,0 +1,209 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
+}
+
+// sidebar nab
+
+.sidebar-nav {
+  width: 250px;
+  height: 100vh;
+  background: #09101a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  .logo-area {
+    padding: 50px;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  .nav-items {
+    padding: 50px 10px;
+    a {
+      text-decoration: none;
+      color: rgba(175, 175, 175, 0.965);
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin: 20px;
+      gap: 10px;
+      .icon {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: ease all 0.5s;
+      }
+      .active {
+        background-color: #55e6a5;
+        color: #fff;
+      }
+
+      &:hover .icon {
+        background-color: #55e6a5;
+        color: #000;
+      }
+    }
+  }
+}
+
+// hero area
+.hero-area {
+  background: url(../images/herobg.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  .content {
+    margin-bottom: 100px;
+    h1 {
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 51px; /* 51% */
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 51px; /* 127.5% */
+      text-transform: capitalize;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 175% */
+    }
+
+    button {
+      padding: 15px 30px;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+    }
+    .btn-green {
+      background: #55e6a5;
+      margin-right: 20px;
+      color: #000;
+    }
+    .btn-dark {
+      background: #737588;
+      i {
+        color: #55e6a5;
+      }
+    }
+  }
+}
+
+// about me area
+
+.about-me-area {
+  padding: 50px 0;
+  height: 100vh;
+  span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .about-content {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .about-img {
+    position: relative;
+    text-align: center;
+
+    .parson-img {
+      z-index: 9;
+    }
+    .bg-dots {
+      position: absolute;
+      top: -35px;
+      right: 0px;
+      z-index: -1;
+    }
+
+    .about-badge {
+      background: #55e6a5;
+      position: absolute;
+      right: 40px;
+      bottom: -30px;
+      padding: 20px 30px;
+      text-align: left;
+      border-radius: 10px;
+
+      .icon {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .text {
+        color: #000;
+        h5 {
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 51px;
+          text-transform: capitalize;
+          margin-bottom: -5px;
+        }
+        p {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 26px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
