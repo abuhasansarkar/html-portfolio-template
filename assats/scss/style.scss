@@ -207,3 +207,72 @@ body {
     }
   }
 }
+
+// Services area
+.services-area {
+  padding: 100px;
+
+  .text-center {
+    span {
+      color: #55e6a5;
+      font-size: 16.96px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: capitalize;
+    }
+    h2 {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 80px;
+    }
+  }
+
+  .row {
+    margin-top: 200px;
+  }
+  .meddle-service {
+    margin-top: -100px;
+  }
+  .service {
+    padding: 30px;
+    border-radius: 5px;
+    background: #09101a;
+
+    img {
+      background-color: #55e6a5;
+      width: 90px;
+      height: 90px;
+      padding: 10px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      margin-top: -100px;
+    }
+    h3 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 175% */
+    }
+  }
+  .services-btn {
+    border-radius: 5px;
+    border: 1px solid #55e6a5;
+    color: #fff;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
